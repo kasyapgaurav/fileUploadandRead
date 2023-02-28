@@ -1,0 +1,16 @@
+.THIS input[type="file"] {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.THIS {
+    background-color: white; 
+    height: 100%;
+}
