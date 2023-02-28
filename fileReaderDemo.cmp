@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" >
+    <aura:attribute name="FileList" type="Object" />
+    <aura:attribute name="fileName" type="String" />
+    <aura:attribute name="fileType" type="String" />
+    <aura:attribute name="fileBody" type="String" />
+    <aura:attribute name="fullFileName" type="String" />
+    
+    <ltng:require scripts="{!$Resource.xlsxmin}" />
+    
+    <lightning:input
+                     aura:id="file-input"
+                     type="file"
+                     files="{!v.FileList}"
+                     accept=".xls, .xlsx, .csv"
+                     name="file"
+                     multiple="false"
+                     onchange="{!c.upload}"
+                     />
+</aura:component>
